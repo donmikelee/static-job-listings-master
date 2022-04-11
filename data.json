@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Photosnap",
+        "logo": "",
+        "jobAdTitle": "Senior Frontend Developer",
+        "difficulty": "senior",
+        "regularPost": "full time",
+        "country": "USA only",
+        "timeStatus": "1d ago",
+        "newJobAd": true,
+        "featured": true,
+        "technologyStack": {
+            "Frontend": true,
+            "Backend": false,
+            "Fullstack": false,
+            "HTML": true,
+            "CSS": true,
+            "SASS": false,
+            "JavaScript": true,
+            "Vue": false,
+            "Angular": false,
+            "React": false,
+            "Python": false,
+            "Django": false,
+            "Ruby": false
+        }
+    }
+]
