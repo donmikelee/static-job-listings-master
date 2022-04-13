@@ -3,18 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
     <div id="app">
-      <div class="container">
-        <header class="header"></header>
-        <main class="content">
-          <ul class="job-ad-list"></ul>
-        </main>
-      </div>
+      <header class="header"></header>
+      <main class="content">
+        <ul class="job-list" id="job-ad-list">
+          <li>
+            <div class="job-ad-block">
+              <div class="job-logo">
+                <img src="./images/photosnap.svg" alt="job-logo" />
+              </div>
+              <div class="job-ad-content">
+                <div class="job-ad-header">
+                  <h4>Photosnap</h4>
+                  <div class="sign new-sign"><p>new!</p></div>
+                  <div class="sign featured-sign"><p>featured</p></div>
+                </div>
+                <div class="job-ad-title">
+                  <h3>senior frontend developer</h3>
+                </div>
+                <div class="job-ad-info">
+                  <ul>
+                    <li>1d ago</li>
+                    <li>full time</li>
+                    <li><span>usa</span> only</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </main>
     </div>
     <script type="module" src="style/main.js"></script>
   </body>
