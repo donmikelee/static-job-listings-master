@@ -1,5 +1,4 @@
-@import './variables.scss';
-@import './root.scss';
+@import './typography.scss';
 
 .app {
   background-color: $light-cyan-background;
@@ -48,8 +47,6 @@ header {
 }
 
 .job-ad-header h4 {
-  font-size: 18px;
-  color: $desaturated-dark-cyan;
   margin-top: 4px;
   margin-right: 20px;
 }
@@ -57,10 +54,6 @@ header {
 .job-ad-header .sign {
   border-radius: 25px;
   padding: 5px 5px 3px 5px;
-  text-transform: uppercase;
-  color: #fff;
-  font-weight: 500;
-  font-size: 14px;
   text-align: center;
 }
 
@@ -75,11 +68,6 @@ header {
 
 .job-ad-title {
   margin-top: 14px;
-}
-
-.job-ad-title h3 {
-  font-size: 22px;
-  text-transform: capitalize;
 }
 
 .job-ad-info ul {
@@ -125,7 +113,7 @@ header {
 .jobs-ad-tags ul li {
   color: $desaturated-dark-cyan;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   text-transform: capitalize;
   padding: 10px;
   background-color: $light-cyan-background;

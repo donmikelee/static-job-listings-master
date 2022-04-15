@@ -1,3 +1,4 @@
+@import './variables.scss';
 @font-face {
     font-family: 'League Spartan';
     src: url('../design/League_Spartan/LeagueSpartan-VariableFont_wght.ttf');
@@ -6,7 +7,6 @@
 html,
 body {
     width: 100%;
-    font-size: 15px;
     font-family: 'League Spartan', sans-serif;
 }
 
@@ -16,4 +16,20 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+h3 {
+    font-size: $header-medium;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: $header-extra-small;
+}
+
+p.text-label {
+    text-transform: uppercase;
+    color: $snow-white;
+    font-weight: $font-weight-regular;
+    font-size: $text-label;
 }
