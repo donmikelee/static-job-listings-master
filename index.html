@@ -3,18 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/style.scss" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app">
-      <div class="container">
-        <header class="header"></header>
-        <main class="content">
-          <ul class="job-ad-list"></ul>
-        </main>
-      </div>
+    <div id="app" class="app">
+      <header class="header"></header>
+      <main class="website-content">
+        <ul class="job-list" id="job-ad-list">
+          <li>
+            <div class="job-ad-block">
+              <div class="job-logo">
+                <img src="./images/photosnap.svg" alt="job-logo" />
+              </div>
+              <div class="job-ad-content">
+                <div class="job-ad-header">
+                  <h4>Photosnap</h4>
+                  <div class="sign new-sign">
+                    <p class="text-label">new!</p>
+                  </div>
+                  <div class="sign featured-sign">
+                    <p class="text-label">featured</p>
+                  </div>
+                </div>
+                <div class="job-ad-title">
+                  <h3>senior frontend developer</h3>
+                </div>
+                <div class="job-ad-info">
+                  <ul>
+                    <li>1d ago</li>
+                    <li>full time</li>
+                    <li><span>usa</span> only</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="jobs-ad-tags">
+                <ul>
+                  <li>frontend</li>
+                  <li>senior</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </main>
     </div>
     <script type="module" src="style/main.js"></script>
   </body>
