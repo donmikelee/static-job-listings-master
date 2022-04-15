@@ -1,0 +1,143 @@
+@import './variables.scss';
+@import './root.scss';
+
+.app {
+  background-color: $light-cyan-background;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: $desaturated-dark-cyan;
+  background-image: url('../images/bg-header-desktop.svg');
+  object-fit: contain;
+  height: 150px;
+}
+
+.website-content {
+  padding: 78px 165px;
+}
+
+.job-list {
+  list-style-type: none;
+  width: auto;
+}
+
+/***** JOB-AD STYLES *****/
+
+.job-ad-block {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  background-color: #fff;
+  border-left: 5px solid $desaturated-dark-cyan;
+  padding: 30px;
+  box-shadow: 0 4px 6px -6px #222;
+}
+
+.job-logo {
+  margin-left: 5px;
+}
+
+.job-ad-content {
+  margin-left: 25px;
+}
+
+.job-ad-header {
+  display: flex;
+}
+
+.job-ad-header h4 {
+  font-size: 18px;
+  color: $desaturated-dark-cyan;
+  margin-top: 4px;
+  margin-right: 20px;
+}
+
+.job-ad-header .sign {
+  border-radius: 25px;
+  padding: 5px 5px 3px 5px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
+.job-ad-header .new-sign {
+  background-color: $desaturated-dark-cyan;
+  margin-right: 10px;
+}
+
+.job-ad-header .featured-sign {
+  background-color: $very-dark-cyan;
+}
+
+.job-ad-title {
+  margin-top: 14px;
+}
+
+.job-ad-title h3 {
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.job-ad-info ul {
+  margin-top: 10px;
+  list-style-type: disc;
+  display: flex;
+}
+
+.job-ad-info ul > li {
+  font-size: 19px;
+  margin-right: 30px;
+  color: $dark-cyan;
+}
+
+.job-ad-info ul > li:nth-child(2) {
+  text-transform: capitalize;
+}
+
+.job-ad-info ul > li > span {
+  text-transform: uppercase;
+}
+
+.job-ad-info ul > li:first-child::marker {
+  content: '';
+}
+
+.jobs-ad-tags {
+  flex-grow: 1;
+  display: flex;
+}
+
+.jobs-ad-tags > ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  list-style-type: none;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  margin-right: 10px;
+}
+
+.jobs-ad-tags ul li {
+  color: $desaturated-dark-cyan;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 10px;
+  background-color: $light-cyan-background;
+  border-radius: 4px;
+}
+
+@media (max-width: 1212px) {
+  .website-content {
+    padding: 78px 11%;
+  }
+
+  .jobs-ad-tags > ul {
+    margin-top: 15px;
+  }
+}
